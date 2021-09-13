@@ -1,17 +1,23 @@
+import React, {useState} from 'react';
 import './header.css'
 import logo from '../imgs/gobeyond_logo_white 1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faUser as farFaUser} from '@fortawesome/free-regular-svg-icons'
-import { faCaretDown} from '@fortawesome/free-solid-svg-icons'
-import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes, faShoppingCart, faSearch, faCaretDown} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+
+
 
 const Header = () =>{
+
+    const[click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
      return(
          <div className="header">
-             <div className="logo">
-                 <img src={logo} alt="logo"/>
-             </div>
+             <Link to='/' className="navbar-logo">
+                    <img src={logo} alt="logo"/>
+             </Link>
              <div className="categories">
                  <a href="/" className="list-header">Home</a>
 
@@ -56,7 +62,7 @@ const Header = () =>{
                  <div className="carrinho">
                     <a href="/" className="carrinho">
                     <FontAwesomeIcon icon={faShoppingCart} />
-                    <button  className="cars">0</button>
+                    <button  className="cars"> 0 </button>
                     </a>
                  </div>
              </div>

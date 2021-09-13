@@ -70,3 +70,13 @@
     font-size: 14px;
     margin-left:5px;
 }
+
+.error {
+    position: absolute;
+    color: red;
+    font-size: .6rem;
+  }
+
+  .error-boder {
+   border:#E9BF33
+  }

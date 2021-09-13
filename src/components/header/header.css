@@ -104,9 +104,12 @@
   }
   .cars{
     border-radius: 50%;
+    width:15px;
     background-color:rgb(202, 165, 0);
     color:white;
     border:none;
+    padding: 2px;
+    font-size: 10px;
   }
   .carrinho{
       color:black;

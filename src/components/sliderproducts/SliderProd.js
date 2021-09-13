@@ -53,7 +53,7 @@ export default class Responsive extends Component {
         ]
       };
       return (
-        <div className="container">
+        <div className="itens-prod-container">
           <h2 className="Title-Prod">Mais Vendidos</h2>
           <div className="linha"></div>
           <Slider {...settings} className="sliderteste">
@@ -79,7 +79,9 @@ export default class Responsive extends Component {
                   <div className="preço3">ou tem 9x de  R$14,44</div>
                   <div className="buttonZap">
                       <button className="buyButton">
+                        <div className="icon"> 
                         <FontAwesomeIcon icon={faWhatsapp}/>
+                        </div>
                         <p className="buyButton">COMPRAR</p>
                       </button>
                   </div>
@@ -107,7 +109,9 @@ export default class Responsive extends Component {
                   <div className="preço3">ou tem 9x de  R$13,33</div>
                   <div className="buttonZap">
                       <button className="buyButton">
+                        <div className="icon"> 
                         <FontAwesomeIcon icon={faWhatsapp}/>
+                        </div>
                         <p className="buyButton">COMPRAR</p>
                       </button>
                   </div>
@@ -134,7 +138,9 @@ export default class Responsive extends Component {
                   <div className="preço3">ou tem 9x de  R$2,77</div>
                   <div className="buttonZap">
                       <button className="buyButton">
+                        <div className="icon"> 
                         <FontAwesomeIcon icon={faWhatsapp}/>
+                        </div>
                         <p className="buyButton">COMPRAR</p>
                       </button>
                   </div>
@@ -161,7 +167,9 @@ export default class Responsive extends Component {
                   <div className="preço3">ou tem 9x de  R$11,16</div>
                   <div className="buttonZap">
                       <button className="buyButton">
+                        <div className="icon"> 
                         <FontAwesomeIcon icon={faWhatsapp}/>
+                        </div>
                         <p className="buyButton">COMPRAR</p>
                       </button>
                   </div>
@@ -189,7 +197,9 @@ export default class Responsive extends Component {
                   <div className="preço3">ou tem 9x de  R$8,78</div>
                   <div className="buttonZap">
                       <button className="buyButton">
+                        <div className="icon"> 
                         <FontAwesomeIcon icon={faWhatsapp}/>
+                        </div>
                         <p className="buyButton">COMPRAR</p>
                       </button>
                   </div>
@@ -219,7 +229,7 @@ export default class Responsive extends Component {
                          <div className="icon"> 
                         <FontAwesomeIcon icon={faWhatsapp}/>
                         </div>
-                        <p>COMPRAR</p>
+                        <p className="buyButton">COMPRAR</p>
                       </button>
                   </div>
               </div>      

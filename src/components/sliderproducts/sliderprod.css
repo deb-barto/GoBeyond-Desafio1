@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-.container{
+.itens-prod-container{
    max-width: 80%;
    margin: auto;
    align-items: center;
@@ -137,7 +137,7 @@
     height:33px;
     border-radius:5px;
     cursor: pointer;
-    padding:-5px;
+    padding:10px;
     font-size:15px;
 }
 .icon{
@@ -145,6 +145,7 @@
 }
 .buyButton:hover{
     background-color: #04914d;
+    transition:ease-in 1s;
 }
 .buttonZap{
     align-self: center;

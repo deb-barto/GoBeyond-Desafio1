@@ -18,7 +18,7 @@ Foi dado o desafio em uma sexta-feira a noite para ser concluido até segunda. O
 - Slick
 - Photoshop e Illustrator
 
-###😣 Oque faltou?
+### 😣 Oque faltou?
 -Parte Mobile completa
 -Tela de validação de cadastro
 

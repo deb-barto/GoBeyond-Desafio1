@@ -3,7 +3,7 @@ import './header.css'
 import logo from '../imgs/gobeyond_logo_white 1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser as farFaUser} from '@fortawesome/free-regular-svg-icons'
-import { faBars, faTimes, faShoppingCart, faSearch, faCaretDown} from '@fortawesome/free-solid-svg-icons'
+import {faShoppingCart, faSearch, faCaretDown} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 
@@ -62,7 +62,7 @@ const Header = () =>{
                  <div className="carrinho">
                     <a href="/" className="carrinho">
                     <FontAwesomeIcon icon={faShoppingCart} />
-                    <button  className="cars"> 0 </button>
+                    <button  className="cars"> 1</button>
                     </a>
                  </div>
              </div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
 import { TextField } from './TextField';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import "./form.css"
 
 function Formulario() {
-
+  
   const validate = Yup.object({
     firstName: Yup.string()
       .min(3, 'Preencha com seu nome completo')
@@ -14,7 +15,21 @@ function Formulario() {
     email: Yup.string()
       .email('Preencha com um e-mail válido')
       .required('Preencha com um e-mail válido'),
-  })
+  });
+
+    const {handleSubmit } =
+      useFormik({
+        onSubmit: (values, form) => {
+          console.log("Cadastro ok")
+        },
+        validate,
+        initialValues: {
+          email: "",
+          username: "",
+        },
+      });
+  
+
   return (
     <Formik
       initialValues={{
@@ -30,9 +45,23 @@ function Formulario() {
         <div className="Form">
           <h1 className="font-weight-bold">Participe de nossas new com promoções e novidades!</h1>
           <Form className='inputs'>  
-            <TextField  className="name" name="firstName" type="text" placeholder="Digite seu Nome"/>
-            <TextField className="email" name="email" type="email" placeholder="Digite seu email"/>
-            <button className="button" type="submit">Eu quero!</button>
+            <TextField 
+            className="name"
+            name="firstName" 
+            type="text" 
+            placeholder="Digite seu Nome"/>
+            <TextField 
+            className="email"
+            name="email" 
+            type="email" 
+            placeholder="Digite seu email"/>
+
+            <button 
+            className="button" 
+            type="submit" 
+            onClick={() => handleSubmit()}>
+              Eu quero!
+            </button>
           </Form>
         </div>
       )}
